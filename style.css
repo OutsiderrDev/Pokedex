@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #b113d3, #d068de, #dd87e5, #e8a4eb);
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+h1{
+    letter-spacing: 4px;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size: 8vmin;
+    margin-bottom: 2%;
+}
+a{
+    text-decoration: none;
+    color: #FCCF00;
+    -webkit-text-stroke: 6px #2468B1;
+}
+#loading{
+    border: 16px solid white;
+    border-top: 16px solid #b113d3;
+    border-radius: 50%;
+    width: 10vmin;
+    height: 10vmin;
+    animation: spin 2s linear infinite;
+    margin-top: 5%;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+#searchText{
+    font-size: 4vmin;
+    width: 60vmin;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #b113d3;
+    border: none;
+    letter-spacing: 4px;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    font-size: 4vmin;
+    margin-top: 2%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    color: #b113d3;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 4px;
+    font-family: 'Pokemon Solid', sans-serif;
+    
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.795);
+}
+#btnSearch{
+    margin-left: 20px;
+}
+#btnFav{
+    margin-top: 1%;
+}
+.pokemonDisplay{
+    width: 50vw;
+    margin-top: 5%;
+    padding: 20px;
+}
+.text{
+    float: left;
+    font-family: monospace;
+    font-size: 3vmin;
+    color: white;
+    text-shadow: 2px 2px black;
+    margin-top: 2%;
+}
+
+.images{
+    float: right;
+}
+
+.images img{
+    width: 18vmin;
+    height: 18vmin;
+}
+
+@media(max-width:1850px){
+    .pokemonDisplay{
+        width: 80vw;
+    }
+}
+.gallery{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5% 15%;
+    width: 75vmin;
+    height: 40vmin;
+    margin-top: 2%;
+    
+}
+.gallery button{
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.gallery button:hover{
+    transform: scale(1.1);
+}
+.fav{
+    width: 2vmin;
+    height: 2vmin;
+    margin-left: 2%;
+}
